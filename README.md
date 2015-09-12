@@ -11,7 +11,8 @@ tdd-angular2/
  │   
  ├──test/                                  
  │	   
- ├──package.json                           
+ ├──package.json
+                            
 ```
 
 ## About Us
