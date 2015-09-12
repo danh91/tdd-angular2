@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha"
+    "run test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -26,5 +26,12 @@
   "bugs": {
     "url": "https://github.com/DanH91/ttd-angular2/issues"
   },
-  "homepage": "https://github.com/DanH91/ttd-angular2#readme"
+  "homepage": "https://github.com/DanH91/ttd-angular2#readme",
+  "dependencies": {
+    "angular2": "^2.0.0-alpha.37"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "mocha": "^2.3.2"
+  }
 }

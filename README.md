@@ -1,6 +1,5 @@
 ## Why Test-Driven Development
 ## Technologies
-## Setup
 ## File Structure
 
 ```
@@ -14,5 +13,6 @@ tdd-angular2/
  ├──package.json
                             
 ```
+## Setup
 
 ## About Us
