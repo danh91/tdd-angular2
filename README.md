@@ -1,9 +1,11 @@
-# Why Test-Driven Development
+# Why Test-Driven Development?
 # Technologies
 ### Angular 2 
-<img src="https://cdn1.slant.co/11196-thumb.png" width="180" height="180"/>
+<img src="https://avatars0.githubusercontent.com/u/139426?v=3&s=400" width="80" height="80"/>
+Angular 2 is the next generation version of the infamous development platform for building web application development. Although Angular 2 is still in the works, the platform claims to add a lot of powerful features.
 ### Mocha
-<img src="https://avatars0.githubusercontent.com/u/139426?v=3&s=400" width="180" height="180"/>
+<img src="https://cdn1.slant.co/11196-thumb.png" width="80" height="80"/>
+Mocha is probably the most popular test framework for JavaScript. It provides browser support, asynchronous tests, clean coverage reports, and use of any assertion library.
 # File Structure and Important Files
 ```
 tdd-angular2/

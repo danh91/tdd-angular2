@@ -7,6 +7,7 @@
     "test": "test"
   },
   "scripts": {
+    "build": "tsc -m commonjs -t es5 --emitDecoratorMetadata src/*.ts --outDir build/ | tsc -m commonjs -t es5 --emitDecoratorMetadata test/*.ts",
     "run test": "mocha"
   },
   "repository": {
