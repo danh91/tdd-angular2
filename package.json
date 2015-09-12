@@ -28,7 +28,8 @@
   },
   "homepage": "https://github.com/DanH91/ttd-angular2#readme",
   "dependencies": {
-    "angular2": "^2.0.0-alpha.37"
+    "angular2": "^2.0.0-alpha.37",
+    "reflect-metadata": "^0.1.1"
   },
   "devDependencies": {
     "chai": "^3.2.0",
