@@ -9,7 +9,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-/// <reference path="typings/angular2/angular2.d.ts" />
+/// <reference path="../typings/angular2/angular2.d.ts" />
 var angular2_1 = require('angular2/angular2');
 // Annotation section
 var ArticleComponent = (function () {
@@ -26,7 +26,8 @@ var ArticleComponent = (function () {
             selector: 'app'
         }),
         angular2_1.View({
-            template: "<h1>Test-Driven Development with Angular 2<h1/>\n  \t    <h2>Article Description </h2>\n\t    <p>Title: {{ title }}</p> \n\t    <p>Authors: {{ authors }}</p> \n  \t    "
+            template: "<h1>Test-Driven Development with Angular 2<h1/>\n  \t    <h2>Article Description </h2>\n\t    <p>Title: {{ title }}</p> \n\t    <p>Authors: {{ authors }}</p>\n\t    <p>Tags: <i *ng-for=\"#tag of tags\">{{ tag }}, </i></p> \n  \t    ",
+            directives: [angular2_1.NgFor]
         }), 
         __metadata('design:paramtypes', [])
     ], ArticleComponent);

@@ -1,5 +1,5 @@
 /// <reference path="../typings/angular2/angular2.d.ts" />
-import { Component, View } from 'angular2/angular2';
+import { Component, View, NgFor } from 'angular2/angular2';
 
 // Annotation section
 @Component({
@@ -9,9 +9,11 @@ import { Component, View } from 'angular2/angular2';
 @View({
   template: `<h1>Test-Driven Development with Angular 2<h1/>
   	    <h2>Article Description </h2>
-        <p>Title: {{ title }} </p> 
-        <p>Authors: {{ authors }} </p> 
-  	    `
+	    <p>Title: {{ title }}</p> 
+	    <p>Authors: {{ authors }}</p>
+	    <p>Tags: <i *ng-for="#tag of tags">{{ tag }}, </i></p> 
+  	    `,
+	    directives: [NgFor]
 })
 
 // Component controller
