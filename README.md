@@ -1,4 +1,10 @@
 # Why Test-Driven Development?
+<p>
+TDD focuses on writing software tests before producing code. It uses automated tools to organize and run tests, and reruns tests frequently as changes are made
+to the system during development.
+Writing tests first gives you a clearer perspective on the ideal API design.
+In few words, writing tests as you add features to your code allows you to obtain reliability and having a good code design.
+</p>
 # Technologies
 ### Angular 2 
 <img src="https://avatars0.githubusercontent.com/u/139426?v=3&s=400" width="80" height="80"/>
