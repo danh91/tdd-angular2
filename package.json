@@ -1,0 +1,30 @@
+{
+  "name": "ttd-angular2",
+  "version": "1.0.0",
+  "description": "Test-Driven Development with Angular2",
+  "main": "src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanH91/ttd-angular2.git"
+  },
+  "keywords": [
+    "angular2",
+    "TDD",
+    "unit",
+    "testing",
+    "typescript",
+    "mocha"
+  ],
+  "author": "Darrel-Day Guerrero, Daniel Kobina",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DanH91/ttd-angular2/issues"
+  },
+  "homepage": "https://github.com/DanH91/ttd-angular2#readme"
+}
