@@ -3,7 +3,7 @@
 TDD focuses on writing software tests before producing code. It uses automated tools to organize and run tests, and reruns tests frequently as changes are made
 to the system during development.
 Writing tests first gives you a clearer perspective on the ideal API design.
-In few words, writing tests as you add features to your code allows you to obtain reliability and having a good code design.
+In few words, writing tests as you add features to your code allows you to obtain reliability and a good code design.
 </p>
 # Technologies
 
