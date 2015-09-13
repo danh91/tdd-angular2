@@ -45,7 +45,17 @@ tdd-angular2/
 ```
 ## Setup
 
-## Manual setup *
+## Start with this project as seed *
+#### Clone this repository
+```bash
+	git clone https://github.com/DanH91/ttd-angular2.git
+```
+#### Install the dependencies
+```bash
+	npm install
+```
+
+## Or setup manually *
 
 ### Global requirements
 #### Install Typescript
@@ -80,16 +90,6 @@ tdd-angular2/
 	tsd install angular2
 	tsd install mocha
 	tsd install chai
-```
-
-## Start from this project seed *
-#### Clone this repository
-```bash
-	git clone https://github.com/DanH91/ttd-angular2.git
-```
-#### Install the dependencies
-```bash
-	npm install
 ```
 
 ## Usage
