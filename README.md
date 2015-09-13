@@ -93,8 +93,20 @@ tdd-angular2/
 ```
 
 ## Usage
+#### build the project 
+```bash
+	npm run build 
+```
+#### run it 
+* http-server or alternative is required (you can install it)
+```bash  
+	npm install http-server -g
+```
 
 ## Test
+```bash
+	npm run test
+```
 
 ## About Us
 
