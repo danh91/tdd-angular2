@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "build-all": "npm run build-src && npm run build-test",
+    "build-all": "npm run build && npm run build-test",
     "build-test": "tsc -m commonjs -t es5 --emitDecoratorMetadata --experimentalDecorators test/*.ts --outDir test/build/",
     "build": "tsc -m commonjs -t es5 --emitDecoratorMetadata --experimentalDecorators src/*.ts --outDir build/",
     "test": "npm run build-test &&  mocha test/**/test/"
