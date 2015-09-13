@@ -45,6 +45,57 @@ tdd-angular2/
 ```
 ## Setup
 
+## Manual setup *
+
+### Global requirements
+#### Install Typescript
+```bash
+	npm install typescript -g
+```
+#### Install Mocha
+```bash
+	npm install mocha -g
+```
+
+### Project dependencies
+#### Install Angular2
+```bash
+	npm install angular2^@2.0.0-alpha.37 --save
+```
+#### Install Reflect-Metadata
+```bash
+	npm install reflect-metadata --save
+```
+#### Install Mocha
+```bash
+	npm install mocha --save-dev
+```
+#### Install Chai
+```bash
+	npm install chai --save-dev
+```
+
+#### Typescript dependencies
+```bash
+	tsd install angular2
+	tsd install mocha
+	tsd install chai
+```
+
+## Start from this project seed *
+#### Clone this repository
+```bash
+	git clone https://github.com/DanH91/ttd-angular2.git
+```
+#### Install the dependencies
+```bash
+	npm install
+```
+
+## Usage
+
+## Test
+
 ## About Us
 
 Daniel Kobina
