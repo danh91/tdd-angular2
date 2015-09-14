@@ -72,13 +72,13 @@ Ideally, you want to ensure that TypeScript and Mocha are installed as global pa
 ```
 Once that is done, you will need to include your project depencendies.
 
-### 2- Include Dependendies
+### 2- Include Dependencies
 ```bash
 	npm install angular2^@2.0.0-alpha.37 --save
 	npm install reflect-metadata --save
 ```
 
-### 3- Include Dev-Dependendies
+### 3- Include Dev-Dependencies
 ```bash
 	npm install mocha --save-dev
 	npm install chai --save-dev
@@ -99,7 +99,9 @@ Your TDD project environment is now set. You may now start writing your tests fo
 
 # Usage
 
-By the time you reach this step, we assume that you have created tests. If not, we've included simple test cases and components inside our repository (test/app.ts and src/app.ts). Make sure to read Angular 2 and Mocha documentation for more information.
+By the time you reach this step, we assume that you have created tests. 
+If not, we've included simple test cases and components inside our repository (test/app.ts and src/app.ts). 
+Make sure to read Angular 2 and Mocha documentation for more information.
 
 #### Build & Run 
 
@@ -108,6 +110,8 @@ It is important that you include the --emitDecoratorMetadata --experimentalDecor
 
 ```bash
 	npm run build
+```
+```bash
 	tsc -m commonjs -t es5 --emitDecoratorMetadata --experimentalDecorators src/[filename].ts --outDir build/ 
 ```
 
@@ -115,15 +119,17 @@ To run, we suggest using a simple HTTP server like http-server to run the applic
 ```bash  
 	npm install http-server -g
 ```
-## Test
+#### Test
 To run tests with Mocha use this command. Again, Windows users should go with the second & third commands following "npm run test".
 ```bash
 	npm run test
+```
+```bash
 	tsc -m commonjs -t es5 --emitDecoratorMetadata --experimentalDecorators src/*.ts --outDir build/
 	mocha test/**/test
 ```
 
 ## About Us
 
-Daniel Kobina [@DanHK91](https://twitter.com/DanHK91 "Title")
+Daniel Kobina [@DanHK91](https://twitter.com/DanHK91 "Title") <br/>
 Darrel-Day Guerrero [@ddayyguerrero](https://twitter.com/ddayyguerrero "Title")
