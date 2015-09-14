@@ -25,90 +25,105 @@ TDD frameworks. In fact, with Angular 2's full support of TypeScript, tests can 
 <p> Chai builds upon Mocha and adds useful helpers to perform meaningful test assertions to JavaScript.</p>
 
 # Project Structure Overview
+
+This is how we planned our folder structure. The src/ build/ and test/ folders are the main elements. 
 ```
 tdd-angular2/
  │
- ├──build/								* holds src files that will be transpiled into javascript                             
+ ├──build/										* holds src files that will be transpiled into javascript                             
  │   
- ├──src/                    			* holds typescript written angular 2 components
- │   └──app.ts            				* basic project component, uses angular 2's new standard of defining objects which helps encapsulate behavoir logic 
+ ├──src/                    					* holds typescript written angular 2 components
+ │   └──app.ts            						* basic project component, uses angular 2's new standard of defining objects which helps encapsulate behavoir logic 
  │     		   
  │   
- ├──test/                   			* holds typescript written unit tests
+ ├──test/                   					* holds typescript written unit tests
  |
- ├──node_modules/           			* contains the project's node packages            
+ ├──node_modules/           					* contains the project's node packages            
  │
- ├──typings/                			* contains the project's typescript definition files                   
+ ├──typings/                					* contains the project's typescript definition files                   
  │	   
- ├──tsconfig.json/  					* configuration for typescript definitions
- ├──package.json						* configuration npm build and dependencies
+ ├──tsconfig.json								* configuration for typescript definitions
+ ├──package.json								* configuration npm build and dependencies
 ```
-## Setup
+# Setup
 
-## Start with this project as seed *
-#### Clone this repository
+Our setup aims to be quick and simple. Feel free to add any other dependencies you wish. Simply follow either of these two instructions and you will be ready to write tests in no time!
+
+## A- Fast Automatic Setup
+
+#### 1- Clone the repository
 ```bash
 	git clone https://github.com/DanH91/ttd-angular2.git
 ```
-#### Install the dependencies
+
+#### 2- Install the dependencies
 ```bash
 	npm install
 ```
 
-## Or setup manually *
+## B- Manual Setup
 
-### Global requirements
-#### Install Typescript
+Ideally, you want to ensure that TypeScript and Mocha are installed as global packages inside your working directory.
+
+#### 1- Install Typescript & Mocha
 ```bash
 	npm install typescript -g
-```
-#### Install Mocha
-```bash
 	npm install mocha -g
 ```
+Once that is done, you will need to include your project depencendies.
 
-### Project dependencies
-#### Install Angular2
+### 2- Include Dependendies
 ```bash
 	npm install angular2^@2.0.0-alpha.37 --save
-```
-#### Install Reflect-Metadata
-```bash
 	npm install reflect-metadata --save
 ```
-#### Install Mocha
+
+### 3- Include Dev-Dependendies
 ```bash
 	npm install mocha --save-dev
-```
-#### Install Chai
-```bash
 	npm install chai --save-dev
 ```
 
-#### Typescript dependencies
+With your node packages installed, you can now install your TypeScript definition files.
+
+#### 4- TypeScript dependencies
 ```bash
 	tsd install angular2
+	tsd install es6-promise
+	tsd install rx
+	tsd install rx-lite
 	tsd install mocha
 	tsd install chai
 ```
+Your TDD project environment is now set. You may now start writing your tests followed by your component (of course)!
 
-## Usage
-#### build the project 
+# Usage
+
+By the time you reach this step, we assume that you have created tests. If not, we've included simple test cases and components inside our repository (test/app.ts and src/app.ts). Make sure to read Angular 2 and Mocha documentation for more information.
+
+#### Build & Run 
+
+This command should automatically fetch all of your TypeScript source files from your /src folder and transpile them into the /build folder. If you are running on Windows, use the second script command following "npm run build". 
+It is important that you include the --emitDecoratorMetadata --experimentalDecorators compiler options.
+
 ```bash
-	npm run build 
+	npm run build
+	tsc -m commonjs -t es5 --emitDecoratorMetadata --experimentalDecorators src/[filename].ts --outDir build/ 
 ```
-#### run it 
-* http-server or alternative is required (you can install it)
+
+To run, we suggest using a simple HTTP server like http-server to run the application. Of course, you can use anything you want.
 ```bash  
 	npm install http-server -g
 ```
-
 ## Test
+To run tests with Mocha use this command. Again, Windows users should go with the second & third commands following "npm run test".
 ```bash
 	npm run test
+	tsc -m commonjs -t es5 --emitDecoratorMetadata --experimentalDecorators src/*.ts --outDir build/
+	mocha test/**/test
 ```
 
 ## About Us
 
-Daniel Kobina
-Darrel-Day Guerrero
+Daniel Kobina [@DanHK91](https://twitter.com/DanHK91 "Title")
+Darrel-Day Guerrero [@ddayyguerrero](https://twitter.com/ddayyguerrero "Title")
