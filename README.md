@@ -49,7 +49,7 @@ tdd-angular2/
 
 # Setting up our package 
 
-Before, initializing the build ensure to have lateast versions of node (v4.0.0) and npm (v2.14.3).
+Before, initializing the build ensure to have latest versions of node (v4.0.0) and npm (v2.14.3).
 
 ```bash
 	npm init
@@ -57,7 +57,7 @@ Before, initializing the build ensure to have lateast versions of node (v4.0.0) 
 
 # Setup
 
-Our  setup aims to be quick and simple. Feel free to add any other dependencies you wish. Simply follow either of these two instructions and you will be ready to write tests in no time!
+Our setup aims to be quick and simple. Although, there are sample tests included, this repo does not teach how to write efficient tests. The goal of this repo is to introduce an easy test environment for Angular2. Feel free to add any other dependencies you wish. Simply follow either of these two instructions and you will be ready to write tests in no time!
 
 ## A- Automatic Setup
 
