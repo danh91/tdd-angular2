@@ -45,11 +45,21 @@ tdd-angular2/
  ├──tsconfig.json								* configuration for typescript definitions
  ├──package.json								* configuration npm build and dependencies
 ```
+# Instructions
+
+# Setting up our package 
+
+Before, initializing the build ensure to have lateast versions of node (v4.0.0) and npm (v2.14.3).
+
+```bash
+	npm init
+```
+
 # Setup
 
-Our setup aims to be quick and simple. Feel free to add any other dependencies you wish. Simply follow either of these two instructions and you will be ready to write tests in no time!
+Our  setup aims to be quick and simple. Feel free to add any other dependencies you wish. Simply follow either of these two instructions and you will be ready to write tests in no time!
 
-## A- Fast Automatic Setup
+## A- Automatic Setup
 
 #### 1- Clone the repository
 ```bash
