@@ -20,7 +20,7 @@ TDD frameworks. In fact, with Angular 2's full support of TypeScript, tests can 
 ### Mocha
 <p> Mocha is probably one of the most popular test framework for JavaScript. It provides browser support, asynchronous tests, clean coverage reports, and use of any assertion library.</p>
 
-<img src="http://chaijs.com/public/img/chai-logo.png" width="80" height="80"/>
+<img src="http://chaijs.com/img/chai-logo.png" width="80" height="80"/>
 ### Chai
 <p> Chai builds upon Mocha and adds useful helpers to perform meaningful test assertions to JavaScript.</p>
 
