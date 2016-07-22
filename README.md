@@ -20,7 +20,7 @@ TDD frameworks. In fact, with Angular 2's full support of TypeScript, tests can 
 ### Mocha
 <p> Mocha is probably one of the most popular test framework for JavaScript. It provides browser support, asynchronous tests, clean coverage reports, and use of any assertion library.</p>
 
-<img src="http://chaijs.com/public/img/chai-logo.png" width="80" height="80"/>
+<img src="http://chaijs.com/img/chai-logo.png" width="80" height="80"/>
 ### Chai
 <p> Chai builds upon Mocha and adds useful helpers to perform meaningful test assertions to JavaScript.</p>
 
@@ -85,18 +85,18 @@ Once that is done, you will need to include your project depencendies.
 ### 2- Include Dependencies
 ```bash
 	npm install angular2^@2.0.0-alpha.37 --save
-	npm install reflect-metadata --save
+	npm install reflect-metadata@0.1.2 --save
 ```
 
 ### 3- Include Dev-Dependencies
 ```bash
-	npm install mocha --save-dev
-	npm install chai --save-dev
+	npm install mocha@2.3.2 --save-dev
+	npm install chai@3.2.0 --save-dev
 ```
 
 With your node packages installed, you can now install your TypeScript definition files.
 
-#### 4- TypeScript dependencies
+#### 4- TypeScript dependencies (!Caution!: versioning isn't specified) 
 ```bash
 	tsd install angular2
 	tsd install es6-promise
